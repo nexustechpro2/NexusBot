@@ -1,7 +1,5 @@
 node_modules
 package-lock.json
-test.json
-youtube_cookies.txt
 .env
 .build-cache.json
 node_modules
