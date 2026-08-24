@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nexusbot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node main.js
+    healthCheckPath: /health
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER
+        sync: false

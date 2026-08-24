@@ -1,0 +1,50 @@
+{
+  "name": "whatsapp-bot-platform",
+  "version": "1.0.0",
+  "description": "Multi-user WhatsApp Bot Platform with plugin system",
+  "main": "index.js",
+  "type": "module",
+  "author": "NexusTechPro",
+  "license": "MIT",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "multi-user"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "migrate": "node database/migrations/run-migrations.js",
+    "build:release": "node scripts/build-release.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@nexustechpro/baileys": "latest",
+    "axios": "latest",
+    "chalk": "^4.1.2",
+    "cookie-parser": "latest",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "file-type": "latest",
+    "form-data": "^4.0.0",
+    "guaranteed_security": "^1.0.0",
+    "jsdom": "latest",
+    "moment-timezone": "^0.5.43",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "latest",
+    "os": "latest",
+    "pg": "^8.11.3",
+    "pg-embedded": "^0.2.3",
+    "pino": "^8.16.2",
+    "sharp": "^0.35.3",
+    "std-env": "^4.2.0",
+    "string-to-unicode-variant": "latest",
+    "undici": "^7.18.1"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.2.2",
+    "nodemon": "^3.0.2"
+  }
+}

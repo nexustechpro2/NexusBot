@@ -1,0 +1,3 @@
+{
+  "_warning": "Vercel is NOT supported for NexusBot. Vercel serverless functions have a max execution time of 60s, no persistent filesystem, and cannot maintain long-running WebSocket connections required by Baileys. Deploy on Render, Fly, Railway, or Koyeb instead."
+}
