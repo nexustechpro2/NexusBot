@@ -2,7 +2,7 @@
   "name": "whatsapp-bot-platform",
   "version": "1.0.0",
   "description": "Multi-user WhatsApp Bot Platform with plugin system",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "author": "NexusTechPro",
   "license": "MIT",

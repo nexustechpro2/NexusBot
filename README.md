@@ -171,7 +171,7 @@ Click any platform below to expand the step-by-step setup guide:
 5. Return to the root `/home/container` directory to verify all project files are present.
 6. Go to the **Startup** tab in your panel and set the **Startup Command** to:
    ```bash
-   node index.js
+   main.js
    ```
 7. In the panel variables section, add your `SESSION_ID` and `WHATSAPP_PHONE_NUMBER` (or enter them in the interactive console on first boot).
 8. Start the container.
@@ -185,11 +185,11 @@ Download the startup script from the deployment page:
 
 1. Open **[nexusbot.qzz.io/deploy](https://nexusbot.qzz.io/deploy)** .
 2. Under ***Deploy your own instance***open the **Pterodactyl Panel** card.
-3. Click **Download main.js** (or click **Copy** to copy the script).
-4. Save or upload the file to your container root directory (`/home/container`) as `main.js`.
+3. Click **Download index.js** (or click **Copy** to copy the script).
+4. Save or upload the file to your container root directory (`/home/container`) as `index.js`.
 5. In your panel **Startup** tab, set the **Startup Command** to:
    ```bash
-   node main.js
+   node index.js
    ```
 6. Set `SESSION_ID` and `WHATSAPP_PHONE_NUMBER` in your panel environment variables.
 7. Start your server container.
