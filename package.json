@@ -20,12 +20,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@electric-sql/pglite": "^0.5.7",
     "@nexustechpro/baileys": "latest",
     "axios": "latest",
     "chalk": "^4.1.2",
     "cookie-parser": "latest",
     "dotenv": "^16.3.1",
-    "embedded-postgres": "^18.4.0-beta.17",
     "express": "^4.18.2",
     "file-type": "latest",
     "form-data": "^4.0.0",
