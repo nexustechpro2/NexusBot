@@ -17,7 +17,7 @@
     "multi-user"
   ],
   "scripts": {
-    "start": "node main.js 2>&1 | grep -v GLib-GObject-CRITICAL || true",
+    "start": "node main.js",
     "dev": "nodemon main.js",
     "migrate": "node database/migrations/run-migrations.js",
     "build:release": "node scripts/build-release.js",
@@ -45,9 +45,6 @@
     "std-env": "^4.2.0",
     "string-to-unicode-variant": "latest",
     "undici": "^7.18.1"
-  },
-  "optionalDependencies": {
-    "@electric-sql/pglite": "^0.5.7"
   },
   "devDependencies": {
     "javascript-obfuscator": "^4.2.2",
