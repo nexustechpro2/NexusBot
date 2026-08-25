@@ -13,7 +13,7 @@
     "multi-user"
   ],
   "scripts": {
-    "start": "node main.js",
+    "start": "node main.js 2>&1 | grep -v GLib-GObject-CRITICAL || true",
     "dev": "nodemon main.js",
     "migrate": "node database/migrations/run-migrations.js",
     "build:release": "node scripts/build-release.js",
