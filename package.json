@@ -6,10 +6,6 @@
   "type": "module",
   "author": "NexusTechPro",
   "license": "MIT",
-  "engines": {
-    "node": "24.x",
-    "npm": ">=9.0.0"
-  },
   "keywords": [
     "whatsapp",
     "bot",
@@ -24,6 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@electric-sql/pglite": "^0.5.7",
     "@nexustechpro/baileys": "latest",
     "axios": "latest",
     "chalk": "^4.1.2",
