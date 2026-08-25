@@ -7,7 +7,7 @@
   "author": "NexusTechPro",
   "license": "MIT",
   "engines": {
-    "node": ">=20.0.0",
+    "node": "24.x",
     "npm": ">=9.0.0"
   },
   "keywords": [
