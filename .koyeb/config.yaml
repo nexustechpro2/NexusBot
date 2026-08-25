@@ -1,19 +1,34 @@
+name: nexusbot
+
 services:
-  whatsapp-bot:
+  - name: whatsapp-bot
     type: web
-    build:
+    git:
       buildpack: nodejs
+      run_command: "npm run start"
     instance_type: free
+    regions:
+      - fra
     ports:
       - port: 3000
         protocol: http
+    health_checks:
+      - port: 3000
+        protocol: http
+        path: /health
+        interval: 10
+        timeout: 5
+        healthy_threshold: 1
+        unhealthy_threshold: 3
     env:
-      - name: SESSION_ID
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
+      - key: SESSION_ID
         secret: SESSION_ID
-      - name: WHATSAPP_PHONE_NUMBER
-        secret: WHATSAPP_PHONE_NUMBER
-    regions:
-      - fra
+      - key: DATABASE_URL
+        secret: DATABASE_URL
     scaling:
       min: 1
       max: 1

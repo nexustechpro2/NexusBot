@@ -2,10 +2,11 @@ app = "nexusbot"
 primary_region = "lax"
 
 [build]
-  builder = "heroku/buildpacks:20"
+  builder = "heroku/buildpacks:22"
 
 [env]
   PORT = "3000"
+  NODE_ENV = "production"
 
 [http_service]
   internal_port = 3000
@@ -19,6 +20,13 @@ primary_region = "lax"
     hard_limit = 25
     soft_limit = 20
 
+  [[http_service.checks]]
+    grace_period = "30s"
+    interval = "15s"
+    method = "GET"
+    path = "/health"
+    timeout = "5s"
+
 [[vm]]
   memory = "512mb"
   cpu_kind = "shared"
@@ -27,8 +35,3 @@ primary_region = "lax"
 [mounts]
   source = "nexusbot_sessions"
   destination = "/app/sessions"
-
-[[services.tcp_checks]]
-  interval = "10s"
-  timeout = "2s"
-  grace_period = "30s"

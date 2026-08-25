@@ -6,6 +6,10 @@
   "type": "module",
   "author": "NexusTechPro",
   "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
   "keywords": [
     "whatsapp",
     "bot",
