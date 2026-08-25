@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     buildCommand: npm install
-    startCommand: node main.js
+    startCommand: npm run start
     healthCheckPath: /health
     envVars:
       - key: SESSION_ID
