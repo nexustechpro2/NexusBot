@@ -24,7 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@electric-sql/pglite": "^0.5.7",
     "@nexustechpro/baileys": "latest",
     "axios": "latest",
     "chalk": "^4.1.2",
@@ -46,6 +45,9 @@
     "std-env": "^4.2.0",
     "string-to-unicode-variant": "latest",
     "undici": "^7.18.1"
+  },
+  "optionalDependencies": {
+    "@electric-sql/pglite": "^0.5.7"
   },
   "devDependencies": {
     "javascript-obfuscator": "^4.2.2",
