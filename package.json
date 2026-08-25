@@ -43,6 +43,14 @@
     "string-to-unicode-variant": "latest",
     "undici": "^7.18.1"
   },
+  "resolutions": {
+    "wa-sticker-formatter/sharp": "npm:@img/sharp@latest"
+  },
+  "overrides": {
+    "wa-sticker-formatter": {
+      "sharp": "npm:@img/sharp@latest"
+    }
+  },
   "devDependencies": {
     "javascript-obfuscator": "^4.2.2",
     "nodemon": "^3.0.2"
