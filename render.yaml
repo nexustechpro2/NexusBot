@@ -3,7 +3,7 @@ services:
     name: nexusbot
     runtime: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install --ignore-optional
     startCommand: npm run start
     healthCheckPath: /health
     envVars:
