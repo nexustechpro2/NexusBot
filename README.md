@@ -73,21 +73,19 @@ Click any platform below to expand the step-by-step setup guide:
 
 <br>
 
-*Zero-config deployment directly synced to your GitHub fork.*
+*One-click deployment via Railway template.*
 
-1. [Fork the NexusBot repository](https://github.com/nexustechpro2/nexusbot/fork) to your GitHub account.
-2. Go to [railway.app/new](https://railway.app/new) and select **Deploy from GitHub repo**.
-3. Choose your forked `nexusbot` repository.
-4. Open the **Variables** tab, click **Raw Editor**, and paste:
-   ```env
-   SESSION_ID=NEXUSBOT-xxxxxxxxxxxxxxxx
-   WHATSAPP_PHONE_NUMBER=2348012345678
-   ```
-5. Click **Deploy**.
-6. *(Optional & Recommended)* To preserve session files across restarts, go to **Storage** ➜ **Add Volume** and mount it at `/app/sessions`.
+1. Click the button below to open the Railway template:
+
+   [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/px4tei?utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+2. Click **Configure** on the **nexusbot** service.
+
+3. Enter your `SESSION_ID` (e.g. `NEXUSBOT-xxxxxxxxxxxxxxxx`) and click **Save Config**.
+
+4. Click **Deploy**.
 
 </details>
-
 ---
 
 <details>
