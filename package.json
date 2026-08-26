@@ -38,17 +38,17 @@
     "os": "latest",
     "pg": "^8.11.3",
     "pino": "^8.16.2",
-    "sharp": "^0.35.3",
+    "sharp": "^0.33.5",
     "std-env": "^4.2.0",
     "string-to-unicode-variant": "latest",
     "undici": "^7.18.1"
   },
   "resolutions": {
-    "wa-sticker-formatter/sharp": "npm:@img/sharp@latest"
+    "sharp": "^0.33.5"
   },
   "overrides": {
     "wa-sticker-formatter": {
-      "sharp": "npm:@img/sharp@latest"
+      "sharp": "^0.33.5"
     }
   },
   "devDependencies": {
