@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "start": "node main.js",
-    "dev": "nodemon main.js",
+    "dev": "node main.js",
     "migrate": "node database/migrations/run-migrations.js",
     "build:release": "node scripts/build-release.js",
     "test": "echo \"Error: no test specified\" && exit 1"
