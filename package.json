@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.7",
-    "@nexustechpro/baileys": "github:nexustechpro/baileys",
+    "@nexustechpro/baileys": "github:nexustechpro2/baileys",
     "axios": "latest",
     "chalk": "^4.1.2",
     "cookie-parser": "latest",
