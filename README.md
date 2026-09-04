@@ -77,7 +77,7 @@ Click any platform below to expand the step-by-step setup guide:
 
 1. Click the button below to open the Railway template:
 
-   [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/px4tei?referralCode=YwLwe9&utm_medium=integration&utm_source=template&utm_campaign=generic)
+   [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/rWW4aW?referralCode=QOmtEb&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 2. Click **Configure** on the **nexusbot** service.
 
