@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.7",
-    "@nexustechpro/baileys": "latest",
+    "@nexustechpro/baileys": "github:nexustechpro/baileys",
     "axios": "latest",
     "chalk": "^4.1.2",
     "cookie-parser": "latest",
@@ -42,14 +42,6 @@
     "std-env": "^4.2.0",
     "string-to-unicode-variant": "latest",
     "undici": "^7.18.1"
-  },
-  "resolutions": {
-    "sharp": "^0.33.5"
-  },
-  "overrides": {
-    "wa-sticker-formatter": {
-      "sharp": "^0.33.5"
-    }
   },
   "devDependencies": {
     "javascript-obfuscator": "^4.2.2",
