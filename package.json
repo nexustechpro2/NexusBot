@@ -46,5 +46,12 @@
   "devDependencies": {
     "javascript-obfuscator": "^4.2.2",
     "nodemon": "^3.0.2"
+  },
+  "allowScripts": {
+    "@nexustechpro/baileys": true,
+    "sharp": true,
+    "ffmpeg-static": true,
+    "protobufjs": true,
+    "sqlite3": true
   }
 }
