@@ -13,7 +13,7 @@
     "multi-user"
   ],
   "scripts": {
-    "start": "node --max-old-space-size=384 main.js",
+    "start": "node main.js",
     "dev": "node main.js",
     "migrate": "node database/migrations/run-migrations.js",
     "build:release": "node scripts/build-release.js",
