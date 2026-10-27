@@ -29,6 +29,15 @@ CREATE TABLE IF NOT EXISTS users (
     admin_password VARCHAR(255)
 );
 
+-- ============================================
+-- SESSION METADATA TABLE (Render / Postgres auth)
+-- ============================================
+CREATE TABLE IF NOT EXISTS session_metadata (
+    session_id  VARCHAR(255) PRIMARY KEY,
+    data        JSONB        NOT NULL,
+    updated_at  TIMESTAMP    DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS web_users_auth (
     user_id BIGINT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
     password_hash VARCHAR(255) NOT NULL,
