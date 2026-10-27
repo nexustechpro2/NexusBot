@@ -317,6 +317,10 @@ CREATE INDEX IF NOT EXISTS idx_users_telegram_id ON users(telegram_id);
 CREATE INDEX IF NOT EXISTS idx_users_session_id ON users(session_id);
 CREATE INDEX IF NOT EXISTS idx_users_admin ON users(is_admin, telegram_id);
 
+--Session metadata indexes
+CREATE INDEX IF NOT EXISTS idx_session_metadata_updated_at
+    ON session_metadata (updated_at DESC);
+
 -- WhatsApp Users indexes
 CREATE INDEX IF NOT EXISTS idx_whatsapp_users_telegram_id ON whatsapp_users(telegram_id);
 CREATE INDEX IF NOT EXISTS idx_whatsapp_users_jid ON whatsapp_users(jid) WHERE jid IS NOT NULL;
