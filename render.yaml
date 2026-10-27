@@ -4,9 +4,12 @@ services:
     runtime: node
     plan: free
     repo: https://github.com/nexustechpro2/NexusBot.git
-    buildCommand: npm install
+    region: oregon
+    branch: main
+    buildCommand: npm install --production
     startCommand: npm run start
     autoDeploy: false
+    healthCheckPath: /health
     envVars:
       - key: SESSION_ID
         sync: false
@@ -15,10 +18,12 @@ services:
       - key: DATABASE_URL
         fromDatabase:
           name: nexusbot-db
-          property: connectionString
+          property: connectionPoolString
 
 databases:
   - name: nexusbot-db
     plan: free
     databaseName: nexusbot
     user: nexusbot
+    region: oregon
+    connectionPool: pgbouncer
